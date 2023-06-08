@@ -186,44 +186,63 @@ a {
 /* CARDS */
 
 #productos {
-    margin-top: 70px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 
-.productos__destacados p {
-font-size: 16px;
-font-weight: 400;
+#productos p {
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.productos__destacados span {
+#productos span {
     font-weight: 800;
     font-size: 20px;
 }
 
 .productos__destacados {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 20px;
-    
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 
 .destacados__cards img {
     width: 14rem;
     height: 16rem;
+    padding: 5px;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
 }
 
 .destacados__cards {
-display: flex;
-flex-direction: column;
-background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background: white;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 
 .card__top h2 {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     font-size: 18px;
     font-weight: 800;
     color: black;
@@ -252,4 +271,96 @@ background: white;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+/* BENEFICIOS */
+
+#beneficios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.beneficio__aplicacion i {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.beneficio__aplicacion {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.beneficio__aplicacion__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+    border-left: 1px solid white;
+}
+
+.beneficio__aplicacion__text span:first-child {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.beneficio__aplicacion__text span {
+    font-size: 10px;
+}
+
+/* TODOS LOS PRODUCTOS */
+
+#productos-todos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.productos-title {
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 800;
+}
+
+.tipos-productos {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* max-width: 300px; */
+}
+
+.tipos-productos a {
+    padding: 8px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.tipos-productos a:first-child{
+    background:  rgb(24, 24, 82);
+    color: white;
+}
+
+.cards-productos {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
