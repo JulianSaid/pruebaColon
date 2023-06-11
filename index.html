@@ -7,15 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Club Atletico Colon</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Oswald:wght@600;700&family=Roboto&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,400&family=Oswald:wght@600;700&family=Roboto&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaquerys.css">
+    <link rel="stylesheet" href="./animaciones.css ">
 </head>
 
 <header id="header">
@@ -25,8 +31,12 @@
     <nav class="navbar">
 
         <!-- MENU -->
-        <label for="toggle-menu"><i class="menu fa-sharp fa-solid fa-bars"></i></label>
         <input type="checkbox" id="toggle-menu">
+        <label for="toggle-menu" class="bars-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
         <ul class="navbar__list">
             <li><a href="#">HOME</a></li>
@@ -47,17 +57,17 @@
                 <img src="./Imagen/leyendasomossantafe.png" alt="Somos santa fe">
                 <div class="info__botones">
                     <span class="button-red"><a href="#">Iniciar Sesión</a></span>
-                    <span class="button-black"><a href="./contacto.html">Registrarse</a></span>
+                    <span class="button-red"><a href="./contacto.html">Registrarse</a></span>
                 </div>
             </div>
-            <!-- <div class="info_img">
-                <img src="./Imagen/colon-campeon-1jpg (1).webp" alt="">
-            </div> -->
+            <div class="info_img">
+                <img src="./Imagen/colon-campeon-1jpg (1).webp" alt="colon campeon">
+            </div>
         </div>
 
     </section>
 
-<!-- PRODUCTOS -->
+    <!-- PRODUCTOS -->
 
     <section id="productos">
 
@@ -99,7 +109,7 @@
         </div>
     </section>
 
-<!-- BENEFICIOS -->
+    <!-- BENEFICIOS -->
 
     <section id="beneficios">
         <div class="beneficio__aplicacion">
@@ -136,107 +146,107 @@
 
     </section>
 
-<section id="productos-todos">
+    <section id="productos-todos">
 
-<div class="productos-title">NUESTROS PRODUCTOS</div>
-<div class="tipos-productos">
-    <a href="#" class="activo">TODOS</a>
-    <a href="#">HOMBRE</a>
-    <a href="#">MUJER</a>
-    <a href="#">NIÑOS</a>
-    <a href="#">ACCESORIOS</a>
-</div>
+        <div class="productos-title">NUESTROS PRODUCTOS</div>
+        <div class="tipos-productos">
+            <a href="#" class="active">TODOS</a>
+            <a href="#">HOMBRE</a>
+            <a href="#">MUJER</a>
+            <a href="#">NIÑOS</a>
+            <a href="#">ACCESORIOS</a>
+        </div>
 
-<div class="cards-productos">
-<div class="destacados__cards">
-    <img src="./Imagen/CamisetaColonTitular.png" alt="camiseta titular colon">
-    <div class="card__top">
-        <h2>Camiseta Colón Titular</h2>
-    </div>
-    <div class="card__bot">
-        <span>$23000</span>
-        <button class="button">Comprar</button>
-    </div>
-</div>
+        <div class="cards-productos">
+            <div class="destacados__cards">
+                <img src="./Imagen/CamisetaColonTitular.png" alt="camiseta titular colon">
+                <div class="card__top">
+                    <h2>Camiseta Colón Titular</h2>
+                </div>
+                <div class="card__bot">
+                    <span>$23000</span>
+                    <button class="button">Comprar</button>
+                </div>
+            </div>
 
-<div class="destacados__cards">
-    <img src="./Imagen/CamisetaAlternativaColon.png" alt="camiseta alternativa colon">
-    <div class="card__top">
-        <h2>Camiseta Colón Alternativa</h2>
-    </div>
-    <div class="card__bot">
-        <span>$23000</span>
-        <button class="button">Comprar</button>
-    </div>
-</div>
+            <div class="destacados__cards">
+                <img src="./Imagen/CamisetaAlternativaColon.png" alt="camiseta alternativa colon">
+                <div class="card__top">
+                    <h2>Camiseta Colón Alternativa</h2>
+                </div>
+                <div class="card__bot">
+                    <span>$23000</span>
+                    <button class="button">Comprar</button>
+                </div>
+            </div>
 
-<div class="destacados__cards">
-    <img src="./Imagen/ShortColon.png" alt="short colon">
-    <div class="card__top">
-        <h2>Short Colón Titular</h2>
-    </div>
-    <div class="card__bot">
-        <span>$11700</span>
-        <button class="button">Comprar</button>
-    </div>
-</div>
+            <div class="destacados__cards">
+                <img src="./Imagen/ShortColon.png" alt="short colon">
+                <div class="card__top">
+                    <h2>Short Colón Titular</h2>
+                </div>
+                <div class="card__bot">
+                    <span>$11700</span>
+                    <button class="button">Comprar</button>
+                </div>
+            </div>
 
-<div class="destacados__cards">
-    <img src="./Imagen/COLON MUSCULOSA NARANJA11.jpg" alt="Musculosa naranja">
-    <div class="card__top">
-        <h2>Musculosa Naranja</h2>
-    </div>
-    <div class="card__bot">
-        <span>$8800</span>
-        <button class="button">Comprar</button>
-    </div>
-</div>
+            <div class="destacados__cards">
+                <img src="./Imagen/COLON MUSCULOSA NARANJA11.jpg" alt="Musculosa naranja">
+                <div class="card__top">
+                    <h2>Musculosa Naranja</h2>
+                </div>
+                <div class="card__bot">
+                    <span>$8800</span>
+                    <button class="button">Comprar</button>
+                </div>
+            </div>
 
-<div class="destacados__cards">
-    <img src="./Imagen/COLON_MOCHILA_1.jpg" alt="mochila colon">
-    <div class="card__top">
-        <h2>Short Colón Titular</h2>
-    </div>
-    <div class="card__bot">
-        <span>$12000</span>
-        <button class="button">Comprar</button>
-    </div>
-</div>
+            <div class="destacados__cards">
+                <img src="./Imagen/COLON_MOCHILA_1.jpg" alt="mochila colon">
+                <div class="card__top">
+                    <h2>Short Colón Titular</h2>
+                </div>
+                <div class="card__bot">
+                    <span>$12000</span>
+                    <button class="button">Comprar</button>
+                </div>
+            </div>
 
-<div class="destacados__cards">
-    <img src="./Imagen/MUSCULA MUJER ROJA NEGRA.png" alt="musculosa mujer roja y negra">
-    <div class="card__top">
-        <h2>Musculosa Colón Mujer</h2>
-    </div>
-    <div class="card__bot">
-        <span>$9200</span>
-        <button class="button">Comprar</button>
-    </div>
-</div>
+            <div class="destacados__cards">
+                <img src="./Imagen/MUSCULA MUJER ROJA NEGRA.png" alt="musculosa mujer roja y negra">
+                <div class="card__top">
+                    <h2>Musculosa Colón Mujer</h2>
+                </div>
+                <div class="card__bot">
+                    <span>$9200</span>
+                    <button class="button">Comprar</button>
+                </div>
+            </div>
 
-<div class="destacados__cards">
-    <img src="./Imagen/MEDIAS TRADICIONAL.png" alt="medias colon titular">
-    <div class="card__top">
-        <h2>Medias Colon tradicionales</h2>
-    </div>
-    <div class="card__bot">
-        <span>$6000</span>
-        <button class="button">Comprar</button>
-    </div>
-</div>
+            <div class="destacados__cards">
+                <img src="./Imagen/MEDIAS TRADICIONAL.png" alt="medias colon titular">
+                <div class="card__top">
+                    <h2>Medias Colon tradicionales</h2>
+                </div>
+                <div class="card__bot">
+                    <span>$6000</span>
+                    <button class="button">Comprar</button>
+                </div>
+            </div>
 
-<div class="destacados__cards">
-    <img src="./Imagen/colon_chomba_roja.jpg" alt="chomba colon">
-    <div class="card__top">
-        <h2>Chomba Colon Tradicional</h2>
-    </div>
-    <div class="card__bot">
-        <span>$14900</span>
-        <button class="button">Comprar</button>
-    </div>
-</div>
-</div>
-</section>
+            <div class="destacados__cards">
+                <img src="./Imagen/colon_chomba_roja.jpg" alt="chomba colon">
+                <div class="card__top">
+                    <h2>Chomba Colon Tradicional</h2>
+                </div>
+                <div class="card__bot">
+                    <span>$14900</span>
+                    <button class="button">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 

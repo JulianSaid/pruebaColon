@@ -20,6 +20,7 @@
 body {
     background: black;
     color: white;
+
 }
 
 a {
@@ -29,11 +30,6 @@ a {
 
 /* NAVBAR */
 
-
-.navbar ul {
-    display: none;
-}
-
 #toggle-menu {
     display: none;
 }
@@ -41,40 +37,112 @@ a {
 .menu {
     font-size: 25px;
     color: white;
+    display: block;
+    margin-right: 30px;
 }
 
 .navbar ul a {
     text-decoration: none;
     color: black;
-}
-
-/* LOGO */
-.navbar__logo {
-    height: 60px;
-    width: 60px;
-    margin-left: 20px;
+    cursor: pointer;
 }
 
 .navbar__list {
-    display: flex;
-    height: calc(100vh - 80px);
-    width: 90%;
+    /*display: flex;
+    */
+    height: calc(60vh - 80px);
+    width: 70%;
     position: absolute;
     top: 80px;
     right: 0;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(95, 87, 87);
+    border-radius: 0 0 0 5px;
+    background-color: rgb(177, 161, 161);
+    transform: translateX(200%);
+    transition: all 0.4s ease;
+    -webkit-transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    -ms-transform: translateX(200%);
+    -o-transform: translateX(200%);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-border-radius: 0 0 0 5px;
+    -moz-border-radius: 0 0 0 5px;
+    -ms-border-radius: 0 0 0 5px;
+    -o-border-radius: 0 0 0 5px;
 }
 
-.menu {
-    display: block;
-    margin-right: 30px;
+
+.bars-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
 }
+
+.bars-menu span {
+    height: 2px;
+    width: 30px;
+    background: black;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+
+#toggle-menu:checked~.bars-menu span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+}
+
+#toggle-menu:checked~.bars-menu span:nth-child(2) {
+    opacity: 0;
+}
+
+#toggle-menu:checked ~ .bars-menu span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+}
+
 
 #toggle-menu:checked~.navbar__list {
+    /*display: flex;*/
+    transform: translateX(0);
+    -webkit-transform: ;
+    -moz-transform: ;
+    -ms-transform: ;
+    -o-transform: ;
+}
+
+.navbar ul {
     display: flex;
+    align-items:flex-start;
+    justify-content: start;
+    gap: 50px;
+    padding: 15px;
+}
+
+
+/* LOGO */
+.navbar__logo {
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
 }
 
 /* SECTION INFO */
@@ -93,9 +161,9 @@ a {
     justify-content: center;
     align-items: center;
     width: 95%;
-    gap: 10px;
+    gap: 30px;
     margin-top: 70px;
-    background-color: rgb(177, 161, 161);
+    /* background-color: rgb(177, 161, 161); */
     padding: 15px;
     border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
@@ -105,11 +173,12 @@ a {
 }
 
 .container__info h1 {
-    font-size: 1.8rem;
-    font-family: sans-serif;
+    font-size: 2.3rem;
+    font-family: "Open Sans";
     font-weight: 800;
     text-align: center;
-    background: linear-gradient(54deg, rgba(0, 0, 0, 1) 0%, rgba(171, 36, 36, 1) 50%, rgba(198, 11, 11, 1) 100%);
+    background: rgb(198,11,11);
+background: linear-gradient(123deg, rgba(198,11,11,1) 0%, rgba(17,14,14,1) 51%, rgba(198,11,11,1) 100%);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -131,11 +200,8 @@ a {
     text-align: center;
 }
 
-.info__img {
-    display: flex;
-    width: 50%;
-    max-width: 300px;
-    height: 300px;
+.info__img img {
+    display: none;
 }
 
 
@@ -351,9 +417,10 @@ a {
     -o-border-radius: 5px;
 }
 
-.tipos-productos a:first-child{
-    background:  rgb(24, 24, 82);
-    color: white;
+.active {
+    /* background: rgb(24, 24, 82); */
+    border: 3px solid rgb(24, 24, 82);
+    color: rgb(0, 0, 0);
 }
 
 .cards-productos {
@@ -364,3 +431,6 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+
+
