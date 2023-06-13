@@ -13,16 +13,38 @@
 
     #header {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .navbar {
+        display: flex;
+
+        align-items: center;
     }
 
     .navbar__list {
-        display: block;
-        justify-content: center;
+        display: flex;
         flex-direction: row;
-        top: 15px;
+        margin-top: 20px;
+        height: 80px;
+        position: unset;
+        transform: unset;
+        transition: unset;
         background: transparent;
-        position: block;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+        -webkit-transition: unset;
+        -moz-transition: unset;
+        -ms-transition: unset;
+        -o-transition: unset;
+    }
+
+    .info__descripcion h1 {
+        font-size: 45px;
     }
 
 }
