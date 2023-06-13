@@ -3,31 +3,26 @@
         display: none;
     }
 
-.bars-menu {
-    display: none;
-}
+    .bars-menu {
+        display: none;
+    }
 
-#toggle-menu {
-    display: none;
-}
+    #toggle-menu {
+        display: none;
+    }
 
-#header {
-    display: flex;
-    justify-content: space-around;
-}
+    #header {
+        display: flex;
+        justify-content: space-around;
+    }
 
-.navbar__list {
-    display: flex;
-    justify-content: center;
-
-    flex-direction: row;
-    top: 15px;
-    background: transparent;
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-}
+    .navbar__list {
+        display: block;
+        justify-content: center;
+        flex-direction: row;
+        top: 15px;
+        background: transparent;
+        position: block;
+    }
 
 }
