@@ -26,20 +26,12 @@
     .navbar__list {
         display: flex;
         flex-direction: row;
-        margin-top: 20px;
         height: 80px;
+        margin-top: 25px;
         position: unset;
         transform: unset;
         transition: unset;
         background: transparent;
-        -webkit-transform: unset;
-        -moz-transform: unset;
-        -ms-transform: unset;
-        -o-transform: unset;
-        -webkit-transition: unset;
-        -moz-transition: unset;
-        -ms-transition: unset;
-        -o-transition: unset;
     }
 
     .info__descripcion h1 {

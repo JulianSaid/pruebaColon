@@ -5,10 +5,6 @@
     list-style-type: none;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 #header {
     display: flex;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
@@ -26,8 +22,6 @@ html {
 body {
     background: black;
     color: white;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 a {
@@ -66,8 +60,9 @@ a {
     align-items: center;
     border-radius: 0 0 0 5px;
     background-color: rgb(177, 161, 161);
-    transform: translateX(200%);
-    transition: all 0.4s ease;
+    z-index: 2;
+    transform: translate(200%);
+    transition: all 0.5s ease;
 }
 
 .navbar ul {
@@ -83,36 +78,9 @@ a {
     flex-direction: column;
     gap: 5px;
     position: relative;
+    cursor: pointer;
 }
 
-.bars-menu span {
-    height: 2px;
-    width: 30px;
-    background: black;
-    transition: transform 0.3s;
-}
-
-
-#toggle-menu:checked~.bars-menu span:nth-child(1) {
-    position: absolute;
-    top: 0;
-    transform: rotate(135deg);
-}
-
-#toggle-menu:checked~.bars-menu span:nth-child(2) {
-    opacity: 0;
-}
-
-#toggle-menu:checked~.bars-menu span:nth-child(3) {
-    position: absolute;
-    top: 0;
-    transform: rotate(225deg);
-}
-
-
-#toggle-menu:checked~.navbar__list {
-    transform: translateX(0);
-}
 
 
 /* LOGO */
@@ -375,3 +343,4 @@ a {
     align-items: center;
     max-width: 800px;
 }
+

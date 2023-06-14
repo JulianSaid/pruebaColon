@@ -1,0 +1,83 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* GLASMORPHISMO */
+
+.overlay {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 100vh;
+    width: 100vh;
+    z-index: 1;
+    background: rgb(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0, 37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: none;
+}
+
+#toggle-menu:checked~.overlay {
+    display: block;
+}
+
+/* MENU HAMBURGUESA X */
+.bars-menu span {
+    height: 2px;
+    width: 30px;
+    background: black;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+
+#toggle-menu:checked~.bars-menu span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    transform: rotate(135deg);
+}
+
+#toggle-menu:checked~.bars-menu span:nth-child(2) {
+    opacity: 0;
+}
+
+#toggle-menu:checked~.bars-menu span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    transform: rotate(225deg);
+}
+
+
+#toggle-menu:checked~.navbar__list {
+    transform: translate(0);
+}
+
+.navbar__list::-webkit-scrollbar {
+    display: none;
+}
+
+/* HOVER DE ELEMENTOS A */
+.navbar__list li {
+    position: relative;
+    padding: 0;
+}
+
+.navbar__list li a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.2s ease;
+}
+
+.navbar__list li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
