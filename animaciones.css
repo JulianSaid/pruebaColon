@@ -54,7 +54,7 @@ html {
     transform: translate(0);
 }
 
-.navbar__list::-webkit-scrollbar {
+.navbar__list ::-webkit-scrollbar {
     display: none;
 }
 
