@@ -50,7 +50,7 @@ a {
 }
 
 .navbar__list {
-    height: calc(60vh - 80px);
+    height: calc(80vh - 80px);
     width: 70%;
     position: absolute;
     top: 80px;
@@ -71,6 +71,13 @@ a {
     justify-content: start;
     gap: 50px;
     padding: 15px;
+    /* margin-right: 100px; */
+}
+
+.navbar {
+    display: flex;
+    gap: 40px;
+    margin-right: 20px;
 }
 
 .bars-menu {
@@ -81,7 +88,48 @@ a {
     cursor: pointer;
 }
 
+/* CONTACTO */
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
 
+.user-contact {
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#usuario {
+    display: none;
+}
+
+.usuario__list {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(177, 161, 161);
+    height: calc(40vh - 80px);
+    width: 40%;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    border-radius: 0 0 0 10px;
+    z-index: 2;
+    transform: translate(200%);
+    transition: all 0.5s ease;
+}
+
+#usuario:checked~.usuario__list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
 
 /* LOGO */
 .navbar__logo {
@@ -344,3 +392,57 @@ a {
     max-width: 800px;
 }
 
+.contacto-empresa {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.empresa__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.empresa__redes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.empresa__info i {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.empresa__maps {
+    max-width: 300px;
+    height: 50%;
+    padding: 10px;
+}
+
+.empresa__maps iframe {
+    width: 300px;
+}
+
+.politica {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+    border-top: 1px solid white;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.politica p:first-child {
+    border-right: 1px solid white;
+    padding: 15px;
+}
+
+.politica p {
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}

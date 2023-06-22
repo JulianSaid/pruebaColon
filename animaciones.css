@@ -10,7 +10,7 @@ html {
     top: 80px;
     left: 0;
     height: 100vh;
-    width: 100vh;
+    width: 200vh;
     z-index: 1;
     background: rgb(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0, 37);
@@ -20,6 +20,10 @@ html {
 }
 
 #toggle-menu:checked~.overlay {
+    display: block;
+}
+
+#usuario:checked~.overlay {
     display: block;
 }
 
@@ -54,6 +58,10 @@ html {
     transform: translate(0);
 }
 
+#usuario:checked~.usuario__list {
+    transform: translate(0);
+}
+
 .navbar__list ::-webkit-scrollbar {
     display: none;
 }
@@ -80,4 +88,12 @@ html {
 .navbar__list li a:hover::after {
     transform-origin: bottom left;
     transform: scaleX(1);
+}
+
+/* FOOTER */
+.empresa__info i:hover {
+    background-color: red;
+    transition: all 0.8s ease;
+    border-radius: 5px;
+    padding: 2px;
 }
