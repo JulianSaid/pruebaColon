@@ -28,18 +28,82 @@
 
     .navbar__list {
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
         height: 80px;
         width: 100%;
         margin-top: 24px;
         position: unset;
         transform: unset;
         transition: unset;
-        background: transparent; 
+        background: transparent;
     }
 
     .info__descripcion h1 {
         font-size: 45px;
     }
+
+}
+
+@media (min-width:768px) {
+
+    .beneficio__aplicacion {
+        width: 170px;
+    }
+
+    .contacto-empresa {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .empresa__maps {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .empresa__info {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .empresa__info h2 {
+        font-size: 30px;
+    }
+
+    .empresa__redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .red {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+@media (min-width:1024px) {
+.cards-productos {
+    min-width: 1000px;
+}
+
+.sacar {
+    display: none;
+}
+
+.empresa__maps iframe {
+    width: 400px;
+}
 
 }

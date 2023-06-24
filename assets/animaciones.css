@@ -90,6 +90,16 @@ html {
     transform: scaleX(1);
 }
 
+.tipos-productos a:hover {
+    border: 2px solid rgb(24, 24, 82);
+    transition: 0.5s;
+}
+
+.button:hover {
+    background: rgb(43, 43, 100);
+    transition: 1s;
+}
+
 /* FOOTER */
 .empresa__info i:hover {
     background-color: red;
