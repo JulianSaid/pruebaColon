@@ -17,37 +17,44 @@
 </head>
 
 <body>
+
     <div class="container-login">
 
+        <form class="login">
 
-
-        <div class="login">
-
-            <div class="volver">
-                <i class="fa-solid fa-arrow-rotate-left" style="color: #000000;"></i>
-            </div>
-
-            <img src="./assets/Imagen/Escudo_Colon_Campeón.png" alt="escudo colon" class="logo">
-
-            <h1>Ingreso Socios</h1>
+            <h1>Iniciar Sesión</h1>
 
             <div class="login__inicio">
-                <div class="login__inicio__usuario">
-                    <label for="correo"></label>
-                    <input type="email" id="correo" placeholder="Email">
 
-                    <label for="contraseña"></label>
-                    <input type="password" id="contraseña" placeholder="🔑 Contraseña">
-                    <div class="login-recuerdame">
-                        <label for="recuerdame">Recuerdame</label>
-                        <input type="checkbox" id="recuerdame">
-                    </div>
+                <div class="usuario">
+                    <i class="fa-solid fa-user" class="icon-login"></i>
+                    <input type="text" id="usuario" placeholder="Usuario">
                 </div>
 
-                <span class="btn">Iniciar Sesión</span>
+                <div class="contraseña">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="contraseña" placeholder="Contraseña">
+                </div>
 
+
+
+                <div class="recordar-cuenta">
+                    <label for="recuerdame">Recuerdame</label>
+                    <input type="checkbox" id="recuerdame">
+                </div>
+
+                <div class="registro">
+                    <p>No tienes una cuenta? <a href="./contacto.html">Registrate!</a></p>
+                </div>
+
+
+
+                <div class="botones-enviar">
+                    <button type="submit" class="btn"><a href="./index.html">Cancelar</a></button>
+                    <button type="submit" class="btn"><a href="./index.html">Enviar</a></button>
+                </div>
             </div>
-        </div>
+        </form>
 
     </div>
 </body>
