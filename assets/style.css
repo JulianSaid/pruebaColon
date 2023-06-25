@@ -408,6 +408,8 @@ a {
 .empresa__info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -419,6 +421,7 @@ a {
 .empresa__redes {
     display: flex;
     justify-content: space-around;
+    gap: 20px;
 }
 
 .red {

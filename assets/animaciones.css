@@ -98,10 +98,3 @@ html {
     background: rgb(43, 43, 100);
 }
 
-/* FOOTER */
-.empresa__info i:hover {
-    background-color: red;
-    transition: all 0.8s ease;
-    border-radius: 5px;
-    padding: 2px;
-}
