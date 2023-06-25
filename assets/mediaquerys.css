@@ -106,4 +106,15 @@
     width: 400px;
 }
 
+
+#beneficio {
+    display: flex;
+    justify-content: center;
+}
+
+.beneficio__aplicacion{
+width: 200px;
+display: flex;
+}
+
 }

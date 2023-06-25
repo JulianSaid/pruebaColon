@@ -10,7 +10,7 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 80px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
     position: fixed;
@@ -301,6 +301,7 @@ a {
     color: white;
     border: none;
     cursor: pointer;
+    transition: 1s;
 }
 
 /* BENEFICIOS */
@@ -365,6 +366,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
     /* max-width: 300px; */
 }
 
@@ -374,6 +376,7 @@ a {
     border-radius: 5px;
     font-size: 12px;
     cursor: pointer;
+    transition: 1s;
 }
 
 /* .active {
@@ -466,4 +469,3 @@ a {
     font-weight: 600;
     cursor: pointer;
 }
-
