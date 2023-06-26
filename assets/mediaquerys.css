@@ -44,7 +44,7 @@
 
 }
 
-@media (min-width:768px) {
+@media (min-width:780px) {
 
     .beneficio__aplicacion {
         width: 170px;
@@ -95,6 +95,10 @@
     .destacados__cards {
         width: 15rem;
         height: 17rem;
+    }
+
+    #productos {
+        padding: 5px;
     }
 }
 
