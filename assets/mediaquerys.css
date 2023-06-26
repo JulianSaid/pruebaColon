@@ -91,30 +91,35 @@
         flex-direction: row;
         gap: 10px;
     }
+
+    .destacados__cards {
+        width: 15rem;
+        height: 17rem;
+    }
 }
 
 @media (min-width:1024px) {
-.cards-productos {
-    min-width: 1000px;
-}
+    .cards-productos {
+        min-width: 1000px;
+    }
 
-.sacar {
-    display: none;
-}
+    .sacar {
+        display: none;
+    }
 
-.empresa__maps iframe {
-    width: 400px;
-}
+    .empresa__maps iframe {
+        width: 400px;
+    }
 
 
-#beneficio {
-    display: flex;
-    justify-content: center;
-}
+    #beneficio {
+        display: flex;
+        justify-content: center;
+    }
 
-.beneficio__aplicacion{
-width: 200px;
-display: flex;
-}
+    .beneficio__aplicacion {
+        width: 200px;
+        display: flex;
+    }
 
 }
